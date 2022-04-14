@@ -44,7 +44,7 @@ context('Múltiplas Empresas de Cobrança', () => {
             //Pedir para colocar idenfiticador no botão Limpar
             .get('').click()//Clicando no botão Limpar
             .wait(this.mec.break)
-            .get('').should()//Valiando que a filtragem foi realizada
+            .get('').should()//Validar que a filtragem foi realizada
     });
 
 })
