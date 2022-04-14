@@ -9,16 +9,16 @@ context('Múltiplas Empresas de Cobrança', () => {
     })
 
     it('Cadastro de regra', function () {
-        cy.url().should('eq', 'https://mecfrontendhomologacao.grupotiradentes.com/')//Validando Validando se a URL está correta
+        cy.url().should('eq', 'https://mec-frontend-hom.grupotiradentes.com/')//Validando Validando se a URL está correta
             //pedir para colocar um identificador no botão que expande o menu lateral
             .get('.jss12 > .jss22 > .MuiButtonBase-root > .MuiIconButton-label > .MuiSvgIcon-root').click()//Botão de expandir menu
             //pedir para colocar um identificador nas abas que abrem as opções de menu
             .get('span').contains('Regras').click()//clicando no menu para apresentar as opções
-            .url().should('eq', 'https://mecfrontendhomologacao.grupotiradentes.com/regras')//Validando se a URL está correta com o click
+            .url().should('eq', 'https://mec-frontend-hom.grupotiradentes.com/regras')//Validando se a URL está correta com o click
             //pedir para colocoar um identificador nas opções do menu lateral após expandir a aba
             .get('span').contains('Cadastro de Regras').click()//Clicando na opção de criar a regra
             .wait(this.mec.break)
-            .url().should('eq', 'https://mecfrontendhomologacao.grupotiradentes.com/regras/cadastrar')//Validando se a URL está correta com o click
+            .url().should('eq', 'https://mec-frontend-hom.grupotiradentes.com/regras/cadastrar')//Validando se a URL está correta com o click
             .wait(this.mec.break)
             .get('input[name="instituicao"]').type('unit{downarrow}{enter}', {force: true})//inserindo valor no campo Instituição de ensino
             .wait(this.mec.break)
