@@ -19,8 +19,8 @@ context('Múltiplas Empresas de Cobrança', () => {
             .get('span').contains('Listagem de Regras').click()//Clicando na opção de criar a regra
             .wait(this.mec.break)
             .url().should('eq', 'https://mec-frontend-hom.grupotiradentes.com/regras')//Validando se a URL está correta com o click
-            .wait(this.mec.break)
-            .get('input[name="instituicao"]').type('unit{downarrow}{enter}', {force: true})//inserindo valor no campo Instituição de ensino
+            .wait(this.mec.longbreak)
+            .get('input[name="instituicao"]').type('unit{enter}', {force: true})//inserindo valor no campo Instituição de ensino
             .wait(this.mec.break)
             .get('input[name="modalidade"]').type('Graduação Presencial{downarrow}{enter}', {force: true})//Inserindo valor no campo modalidade
             .wait(this.mec.break)

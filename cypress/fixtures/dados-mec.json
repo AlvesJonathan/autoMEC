@@ -1,6 +1,9 @@
 {
   "break": 2000,
   "longbreak": 6000,
+
+  "instituicao": "unit",
+
   "loteInicio": "1990-10-10",
   "loteFim": "1990-10-10"
 }
