@@ -1,0 +1,18 @@
+{
+  "name": "projeto-mec",
+  "version": "1.0.0",
+  "description": "Automação do projeto MEC - Grupo Tiradentes",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "keywords": [],
+  "author": "Jonathan Alves",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^8.6.0"
+  },
+  "dependencies": {
+    "cypress-cucumber-preprocessor": "^4.3.0"
+  }
+}
